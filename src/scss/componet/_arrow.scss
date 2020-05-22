@@ -1,0 +1,15 @@
+/*===================
+ARROW
+=====================================*/
+
+.c-arrow::after {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%) rotate(135deg);
+}

@@ -1,0 +1,14 @@
+.l-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.l-col02-fv {
+    @media (max-width: 767px) {
+        flex-flow: column;
+    }
+}
+
+.l-col02_wrapper {
+    @media (max-width: 767px) {}
+}

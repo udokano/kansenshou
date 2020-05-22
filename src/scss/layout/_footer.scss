@@ -1,0 +1,7 @@
+.l-footer {
+    border-top: 1px solid $blue;
+
+    @media (max-width: 767px) {
+        margin-bottom: 80px;
+    }
+}

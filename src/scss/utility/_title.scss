@@ -1,0 +1,38 @@
+.u-vertical__ttl {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    color: $blue;
+
+    @media (max-width: 767px) {}
+
+    &__main {
+        font-size: 3.75rem;
+        line-height: 1;
+        display: block;
+
+        @media (min-width: 768px) {
+            margin-left: -10px;
+        }
+
+        @media (max-width: 767px) {
+            display: inline-block;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__sub {
+        text-orientation: upright;
+
+        @media (max-width: 767px) {
+            display: inline-block;
+            text-align: center;
+            padding-left: 4px;
+            position: relative;
+            left: 3px;
+            font-size: 1.3rem;
+        }
+
+        font-size: 1.125rem;
+        line-height: 1;
+    }
+}

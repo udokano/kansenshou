@@ -1,0 +1,26 @@
+.l-header {
+    width: 23.5%;
+    padding: 0 2.5rem;
+    max-width: 300px;
+
+    @media (min-width: 768px) {
+        height: 870px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) {
+        padding: 0 2.1vw;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.l-top-visual {
+    //width: 76.5%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}

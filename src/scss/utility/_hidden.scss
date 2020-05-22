@@ -1,0 +1,45 @@
+/*===============
+PC or SP displey
+=====================================*/
+
+.u-sp-none {
+    display: none;
+}
+
+.u-sp-only {
+    display: none;
+}
+
+.u-sp-display {
+    display: none !important;
+}
+
+.u-sp-d-flex {
+    display: none !important;
+}
+
+@media (max-width: 767px) {
+    .u-pc-only {
+        display: none;
+    }
+
+    .u-sp-only {
+        display: block;
+    }
+
+    .u-pc-displey {
+        display: none !important;
+    }
+
+    .u-sp-none {
+        display: block;
+    }
+
+    .u-sp-display {
+        display: block !important;
+    }
+
+    .u-sp-d-flex {
+        display: flex !important;
+    }
+}

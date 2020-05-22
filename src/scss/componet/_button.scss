@@ -1,0 +1,119 @@
+/* headerボタン */
+
+.c-header_btn {
+    height: 110px;
+    line-height: 110px;
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    background: no-repeat 1.875rem 50%/ 34px auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
+        font-size: 1.2vw;
+        background-size: 2.4vw auto;
+        background-position-x: 1.84vw;
+    }
+
+    @media (max-width: 767px) {
+        width: 46%;
+        height: 19vw;
+        margin: 0;
+        text-align: center;
+        background-position: 50% 35%;
+        background-size: 2.7rem;
+        font-size: .88rem;
+        line-height: 1;
+        padding-top: 5.38rem;
+    }
+
+    &--info {
+        background-image: url(../img/common/c_icon_clinic_info.png);
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            padding-left: 5.6vw;
+        }
+
+        @media (min-width: 768px) {
+            padding-left: 4.625rem;
+        }
+
+        @media (min-width: 768px) {
+            margin-bottom: 2.0625rem;
+        }
+    }
+
+    &--menu {
+        background-image: url(../img/common/c_icon_menu.png);
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            padding-left: 5.8vw;
+        }
+
+        @media (min-width: 768px) {
+            padding-left: 5.125rem;
+        }
+    }
+}
+
+/* ACTION ボタン(ピンク色） */
+
+.c-action_btn {
+    display: block;
+    background-color: $pink;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38px;
+    line-height: 38px;
+    color: #fff;
+    padding-left: 1.0625rem;
+    font-size: 0.875rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+        font-size: 1.04rem;
+    }
+
+    &::after {
+        position: absolute;
+        background: url(../img/common/c_icon_arrow.png) no-repeat 0% 50% / 26px 18px;
+        width: 26px;
+        height: 18px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        content: "";
+
+        @media (max-width: 767px) {
+            background-size: 2.2rem;
+            background-position: 100% 50%;
+            right: 1.0rem;
+        }
+    }
+}
+
+/* MENU ボタン */
+
+.c-menu_btn {
+    height: 38px;
+    line-height: 38px;
+    background-color: #535353;
+    color: #fff;
+    padding: 0 1.375rem;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        background: url(../img/common/c_icon_arrow.png) no-repeat 0% 50% / 26px 18px;
+        width: 26px;
+        height: 18px;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        content: "";
+    }
+}

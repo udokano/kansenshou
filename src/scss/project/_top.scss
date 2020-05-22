@@ -1,0 +1,612 @@
+.p-nav_text {
+    padding: 2.875rem 0;
+    padding-right: 43px;
+    text-align: right;
+
+    @media (max-width: 767px) {
+        padding: 1.4rem 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+}
+
+.p-header {
+    @media (min-width: 768px) {
+        position: relative;
+        left: 0;
+        top: 76px;
+    }
+
+    @media (max-width: 767px) {
+        width: 100%;
+        max-width: 100%;
+        padding: 2.1rem 0;
+    }
+
+    &__inner {
+        position: relative;
+        height: 100%;
+
+        @media (max-width: 767px) {
+            display: flex;
+            justify-content: space-between;
+            width: 92%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__logo {
+        width: 148px;
+
+        @media (min-width: 768px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 220px;
+            width: 42%;
+            padding-top: 1.57rem;
+        }
+    }
+
+    &__cv {
+        margin-top: auto;
+        margin: auto;
+
+        @media (min-width: 768px) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+            width: 48%;
+        }
+    }
+}
+
+.p-first-view {
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.p-visual {
+    background: url(../img/top/fv_bg.jpg) no-repeat 0% (50% / cover);
+    width: 100%;
+    height: 830px;
+    margin: 0 0 130px auto;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 120vw;
+        margin: 0 0 7.7rem;
+        padding-left: 20%;
+        background: none;
+        position: relative;
+    }
+
+    &__inner {
+        max-width: 1400px;
+        min-width: 700px;
+        position: relative;
+        height: 100%;
+
+        @media (max-width: 767px) {
+            background: url(../img/top/fv_bg_sp.jpg) no-repeat 0% (50% / cover);
+            min-width: auto;
+            width: 100%;
+            position: static;
+        }
+    }
+}
+
+.p-visual__text_box {
+    position: absolute;
+    bottom: -65px;
+    right: 0;
+    width: 70%;
+    max-width: 720px;
+
+    @media (max-width: 767px) {
+        left: 0;
+        right: auto;
+        bottom: -35px;
+        width: 90%;
+    }
+
+    &__tit {
+        margin-left: 20%;
+        margin-bottom: 2.4375rem;
+        font-size: 2.5rem;
+        color: #575757;
+        text-align: center;
+        padding: 2.0625rem 0;
+        font-weight: 200;
+
+        @media (max-width: 767px) {
+            margin-left: 0;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1267px) {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__desc {
+        line-height: 2.06;
+        background-color: rgba($color: #000000, $alpha: 0.5);
+        padding: 2rem 2.0625rem;
+        color: #fff;
+        text-align: justify;
+
+        @media (max-width: 767px) {
+            padding: 2.78rem 2.4rem;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/* アクションエリア */
+
+.p-action_nav {
+    display: flex;
+    margin-bottom: 5.3125rem;
+
+    @media (max-width: 767px) {
+        flex-wrap: wrap;
+        margin-bottom: 8.8rem;
+    }
+
+    &__list {
+        width: 309px;
+        height: 130px;
+        border-right: 1px solid #fff;
+        position: relative;
+
+        &:last-of-type {
+            border: none;
+        }
+
+        @media (max-width: 767px) {
+            width: 33.3333333333%;
+            height: 26vw;
+        }
+
+        &--tel {
+            width: 473px;
+
+            @media (max-width: 767px) {
+                display: block;
+                width: 100%;
+                border-bottom: 1px solid #fff;
+                height: 22vw;
+                border-right: none;
+            }
+        }
+    }
+}
+
+.p-action_btn {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+
+    @media (max-width: 767px) {
+        bottom: 10px;
+    }
+
+    &--tel {
+        top: 50%;
+        left: auto;
+        transform: translateY(-50%);
+        right: 9px;
+        width: 34%;
+    }
+}
+
+.p-about {
+    margin-bottom: 3.375rem;
+}
+
+.p-about_desc {
+    margin-bottom: 3.375rem;
+
+    @media (max-width: 767px) {
+        flex-flow: column;
+    }
+
+    &__text {
+        background-color: #dae5e9;
+        padding: 3.8125rem 3.75rem;
+        line-height: 1.88;
+        width: 77.9%;
+        max-width: 1093px;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.2vw;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 2.8rem 2.9rem;
+        }
+    }
+
+    &__link {
+        display: block;
+        background-color: #768288;
+        line-height: 1.4;
+        font-size: 1.5625rem;
+        color: #fff;
+        position: relative;
+        width: 30%;
+        max-width: 308px;
+        padding: 3.0625rem 5.5rem 3.0625rem 2.9375rem;
+        font-weight: lighter;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.84vw;
+            padding-right: 3.2vw;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+            padding: 1.7rem 3.2rem;
+            line-height: 1;
+        }
+
+        &::after {
+            position: absolute;
+            background: url(../img/common/c_icon_arrow.png) no-repeat 88% 50% / 28px 20px;
+            width: 24px;
+            height: 16px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            content: "";
+        }
+    }
+}
+
+/* メニュー */
+
+.p-treatment {
+    &__lists {
+        width: 100%;
+    }
+}
+
+.p-treatment_item {
+    width: 48.7%;
+    margin-bottom: 2.9375rem;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    &__top {
+        position: relative;
+    }
+
+    &__thumb {
+        //position: absolute;
+        width: 100%;
+        height: 20vw;
+        top: 0;
+        left: 0;
+
+        @media (max-width: 767px) {
+            height: 44vw;
+        }
+    }
+
+    &__cat {
+        position: absolute;
+        top: 15px;
+        right: 12px;
+
+        @media (max-width: 767px) {
+            right: 15px;
+        }
+    }
+
+    &__btn {
+        width: 39%;
+        max-width: 225px;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: .775rem;
+        font-size: 0.875rem;
+
+        @media (max-width: 767px) {
+            width: 44%;
+            font-size: 1.04rem;
+        }
+    }
+
+    &__ttl {
+        margin-bottom: .8125rem;
+        font-size: 1.875rem;
+
+        @media (min-width: 768px) {
+            line-height: 1;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.92vw;
+        }
+    }
+
+    &__desc {
+        line-height: 1.88;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.1vw;
+        }
+    }
+}
+
+/* 特徴 */
+
+.p-advance_item {
+    position: relative;
+    width: 48.7%;
+    margin-bottom: 2.2vw;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-bottom: 2.7rem;
+    }
+
+    &__img {
+        height: 20vw;
+
+        @media (max-width: 767px) {
+            height: 58vw;
+        }
+    }
+
+    &__contents {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 139px;
+        width: 100%;
+        padding: 2.725rem  2.075rem 0;
+        background-color: rgba($color: #000000, $alpha: 0.45);
+
+        @media screen and (min-width: 768px) and (max-width: 1700px) {
+            height: 7.6vw;
+            padding-top: 2.525vw;
+        }
+
+        @media (max-width: 767px) {
+            height: 27vw;
+            padding-top: 3.7rem;
+        }
+
+        &__ttl {
+            top: -.7rem;
+            background-color: $yellow;
+            display: inline-block;
+            position: absolute;
+            font-size: 1.875rem;
+            padding: 0 0.625rem;
+            color: #535353;
+
+            @media screen and (min-width: 768px) and (max-width: 1700px) {
+                font-size: 1.8vw;
+            }
+        }
+
+        &__desc {
+            color: #fff;
+            line-height: 1.88;
+
+            @media screen and (min-width: 768px) and (max-width: 1700px) {
+                font-size: .87vw;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 1.14rem;
+            }
+        }
+    }
+}
+
+/* 相談 */
+
+.p-consultation {
+    background-image: url(../img/top/consultation_bg.jpg);
+    background-position: 10% 50%;
+    padding: 8.3125rem;
+    padding-left: 6rem;
+
+    @media (max-width: 767px) {
+        padding: 4rem 1.7rem 25rem;
+        text-align: center;
+        background-image: url(../img/top/consultation_bg_sp.jpg);
+    }
+
+    &__ttl {
+        margin-bottom: 3.1875rem;
+        font-size: 2.5rem;
+
+        @media (min-width: 768px) {
+            line-height: 1;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 2.0rem;
+        }
+    }
+
+    &__desc {
+        line-height: 1.88;
+        color: #535353;
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.p-faq_item {
+    margin-bottom: 2.5rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__qs {
+        border-bottom: 1px solid $blue;
+        padding-bottom: 1.125rem;
+        font-size: 1.375rem;
+
+        @media (max-width: 767px) {
+            display: inline-block;
+            font-size: 1.8rem;
+        }
+    }
+
+    &__answer {
+        margin-top: 1.3125rem;
+        line-height: 1.75;
+        color: #535353;
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
+            padding-right: 1.2%;
+        }
+    }
+}
+
+.p-faq-category {
+    font-size: 1rem;
+    margin-left: 1.25rem;
+}
+
+/* インフォメーション */
+
+.p-information_box {
+    background-image: url(../img/top/information_bg.jpg);
+    background-position: 10% 50%;
+    padding: 6rem 2.4375rem 3.75rem;
+
+    @media (max-width: 767px) {
+        padding: 4.5rem 3.5rem;
+        text-align: center;
+        background-image: url(../img/top/information_bg_sp.jpg);
+    }
+
+    &__bg {
+        @media (max-width: 767px) {
+            background-color: rgba($color: #fff, $alpha: 0.85);
+            padding: 2.8rem 0;
+        }
+    }
+
+    &__logo {
+        width: 40%;
+        max-width: 307px;
+        margin-bottom: 2.1875rem;
+
+        @media (max-width: 767px) {
+            margin: 0 auto 1.5rem;
+            width: 62%;
+        }
+    }
+
+    &__address {
+        margin-bottom: 1.875rem;
+        line-height: 1.75;
+        color: #535353;
+    }
+
+    &__tel {
+        padding-left: 4.3125rem;
+        background: url(../img/common/c_icon_freedial_blue.png) no-repeat 0% 50% / 51px 33px;
+        font-size: 2.625rem;
+        margin-bottom: 0.9375rem;
+
+        @media (max-width: 767px) {
+            background-size: 3.2rem auto;
+        }
+    }
+
+    &__sub_number {
+        margin-bottom: 2.125rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.p-info_action {
+    width: 100%;
+    max-width: 619px;
+
+    &__list {
+        width: 50%;
+
+        &:first-of-type {
+            border-right: 1px solid #fff;
+        }
+
+        @media (max-width: 767px) {
+            text-align: left;
+        }
+
+        &__tit {
+            @media screen and (min-width: 768px) {
+                padding: 0.925rem 0;
+                padding-left: 4.25rem;
+                font-size: 1.5625rem;
+                margin-bottom: 1.0875rem;
+                background-size: 33px 44px;
+            }
+        }
+    }
+}
+
+/* マップ */
+
+.map {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 4.125rem;
+
+    @media (max-width: 767px) {
+        height: 68vw;
+        margin-bottom: 10rem;
+    }
+
+    &__frame {
+        margin-bottom: 1rem;
+    }
+
+    &__link {
+        text-decoration: underline;
+        margin-right: 1.375rem;
+
+        @media (max-width: 767px) {
+            font-size: 1.2rem;
+        }
+    }
+}

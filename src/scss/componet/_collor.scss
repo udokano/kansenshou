@@ -1,0 +1,31 @@
+/*Font color*/
+
+.c-white {
+    color: #fff;
+}
+
+.c-gold {
+    color: #8b6c3f;
+}
+
+.c-blue {
+    color: $blue;
+}
+
+.c-pink {
+    color: $pink;
+}
+
+/* BG カラー */
+
+.c-bg_blue {
+    background-color: $blue;
+}
+
+.c-bg_pink {
+    background-color: $pink;
+}
+
+.c-bg_yellow {
+    background-color: $yellow;
+}

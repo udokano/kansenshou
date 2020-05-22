@@ -1,0 +1,81 @@
+.rangeslider,
+.rangeslider__fill {
+    display: block;
+    border-radius: 29px;
+}
+
+.rangeslider {
+    background: #fff;
+    position: relative;
+    border: 1px solid #fff;
+}
+
+.rangeslider--horizontal {
+    height: 50px;
+    width: 100%;
+}
+
+.rangeslider--vertical {
+    width: 20px;
+    min-height: 150px;
+    max-height: 100%;
+}
+
+.rangeslider--disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4;
+}
+
+.rangeslider__fill {
+    position: absolute;
+}
+
+@media (min-width: 768px) {
+    .rangeslider__fill, .rangeslider__handle {
+        transition: ease .2s;
+    }
+}
+
+.rangeslider--horizontal .rangeslider__fill {
+    top: 0;
+    height: 100%;
+}
+
+.rangeslider--vertical .rangeslider__fill {
+    bottom: 0;
+    width: 100%;
+}
+
+.rangeslider__handle {
+    background: #118d14;
+    cursor: pointer;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+    top: 50%;
+    transform: translateY(-50%);
+    touch-action: pan-y;
+    -ms-touch-action: pan-y;
+}
+
+.rangeslider--vertical .rangeslider__handle {
+    /* left: -10px; */
+    touch-action: pan-x;
+    -ms-touch-action: pan-x;
+}
+
+@media (max-width: 767px) {
+    .rangeslider--horizontal {
+        height: 40px;
+    }
+
+    .rangeslider__handle {
+        width: 30px;
+        height: 30px;
+    }
+}

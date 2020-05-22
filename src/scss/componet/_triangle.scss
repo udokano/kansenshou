@@ -1,0 +1,40 @@
+.triangle {
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        display: block;
+    }
+}
+
+.triangle.triangle-left {
+    &::after {
+        border-width: 35px 60.6px 35px 0;
+        border-color: transparent #ffffff transparent transparent;
+    }
+}
+
+.triangle.triangle-right {
+    &::after {
+        border-width: 35px 0 35px 60.6px;
+        border-color: transparent transparent transparent #ffffff;
+    }
+}
+
+@media (max-width: 767px) {
+    .triangle {}
+
+    .triangle.triangle-left {
+        &::after {
+            border-width: 15px 24px 15px 0;
+        }
+    }
+
+    .triangle.triangle-right {
+        &::after {
+            border-width: 15px 0 15px 24px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.c-action_list {
+    background-color: $blue;
+    padding: 0.875rem 0.9375rem;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        padding: 1.3rem .95rem .78rem;
+    }
+
+    &__tit {
+        font-size: 1.5625rem;
+        margin-bottom: 1.0875rem;
+        background: no-repeat 1.125rem 50% / 33px 44px;
+        line-height: 1;
+        padding: 0.925rem 0;
+        padding-left: 4.25rem;
+
+        @media screen and (min-width: 769px) and (max-width: 1500px) {
+            font-size: 1.5vw;
+            background-size: 2.6vw auto;
+            margin-bottom: 1.45vw;
+        }
+
+        @media (max-width: 767px) {
+            background-size: 2.45rem;
+        }
+
+        &--access {
+            background-image: url(../img/common/c_icon_access.png);
+        }
+
+        &--reserve {
+            background-image: url(../img/common/c_icon_reserve.png);
+        }
+
+        &--contact {
+            background-image: url(../img/common/c_icon_contact.png);
+        }
+    }
+}
+
+.c-action_tel {
+    padding: 1.875rem 2.1875rem;
+    padding-right: 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1700px) {
+        padding-left: 2.28vw;
+    }
+
+    @media (max-width: 767px) {
+        padding: 1.25rem 1.78rem;
+    }
+
+    &__tit {
+        display: block;
+        color: #fff;
+        padding-left: 4.125rem;
+        font-size: 2.625rem;
+        margin-bottom: 13px;
+        background: url(../img/common/c_icon_freedial.png) no-repeat 0% 50% / 51px 33px;
+
+        @media screen and (min-width: 768px) and (max-width: 1700px) {
+            font-size: 2.4vw;
+            background-size: 2.98vw auto;
+            padding-left: 3.7vw;
+        }
+
+        @media (min-width: 768px) {
+            line-height: 1;
+        }
+
+        @media (max-width: 767px) {
+            background-size: 3.8rem;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__text {
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1vw;
+        }
+    }
+}

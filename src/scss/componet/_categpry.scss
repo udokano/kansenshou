@@ -1,0 +1,16 @@
+.c-category {
+    color: $blue;
+    line-height: 1;
+    display: inline-block;
+    background-color: $yellow;
+    height: 32px;
+    line-height: 32px;
+    width: 140px;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        width: 10rem;
+        height: 2.1rem;
+        line-height: 2.1rem;
+    }
+}

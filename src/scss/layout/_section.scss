@@ -1,0 +1,51 @@
+.l-sec-right {
+    margin: 0 0 0 auto;
+    width: 76.5%;
+    max-width: 1400px;
+
+    @media screen and (min-width: 1400px) {
+        width: calc( 100% - 300px);
+    }
+}
+
+.l-action_nav {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.l-col-left {
+    width: 23.5%;
+    max-width: 300px;
+    padding-right: 36px;
+
+    @media (max-width: 767px) {
+        width: 14%;
+        padding: 0 3.2%;
+    }
+}
+
+.l-col-right {
+    width: 76.5%;
+    max-width: 1400px;
+
+    //margin: 0 0 0 auto;
+    @media (max-width: 767px) {
+        width: 86%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: calc( 100% - 300px);
+    }
+}
+
+.l-about {
+    margin-bottom: 3.375rem;
+}
+
+.l-factor {
+    margin-bottom: 9.0625rem;
+}
+
+.l-faq {
+    margin-bottom: 9.0625rem;
+}

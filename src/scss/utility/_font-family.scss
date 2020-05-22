@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Questrial';
+    src: url("../font/Questrial 400.ttf") format("truetype");
+}
+
+.u-f-questrial {
+    font-family: 'Questrial';
+}
+
+/*web font リュウミン*/
+
+.u-f-ryu {
+    font-family: a-otf-ryumin-pr6n, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+/*font family*/
+
+.u-gosic {
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ヒラギノ角ゴシック','Hiragino Sans',YuGothic,'Yu Gothic','メイリオ', Meiryo,sans-serif;
+}
+
+.u-min {
+    font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','ＭＳ 明朝', 'MS Mincho',sans-serif;
+}
