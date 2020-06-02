@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="<%= path %>/src/css/slick.css">
-    <link rel="stylesheet" href="<%= path %>/src/css/style.css?var=1.1">
+    <link rel="stylesheet" href="<%= path %>/src/css/style.css?var=1.2">
 
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="<%= keywords %>">
@@ -32,14 +32,16 @@
 
                 <div class="p-header__inner">
                     <div class="p-header__logo">
-                        <img src="<%= path %>/src/img/common/c_site_logo.png" alt="感染症検査クリニック" class="u-pc-only">
-                        <img src="<%= path %>/src/img/common/c_site_logo_sp.png" alt="感染症検査クリニック" class="u-sp-only">
+                        <a href="<%= path %>/index.html">
+                            <img src="<%= path %>/src/img/common/c_site_logo.png" alt="感染症検査クリニック" class="u-pc-only">
+                            <img src="<%= path %>/src/img/common/c_site_logo_sp.png" alt="感染症検査クリニック" class="u-sp-only">
+                        </a>
                     </div>
                     <!-- ./p-header__logo -->
 
                     <div class="p-header__cv">
-                        <a href="#" class="c-header_btn c-header_btn--info c-bg_blue">クリニック情報</a>
-                        <a href="#" class="c-header_btn c-header_btn--menu c-bg_pink">診察メニュー</a>
+                        <a href="<%= path %>/access.html" class="c-header_btn c-header_btn--info c-bg_blue">クリニック情報</a>
+                        <a href="#link-menu" class="c-header_btn c-header_btn--menu c-bg_pink">診察メニュー</a>
                     </div>
                     <!-- ./p-header__cv -->
                 </div>
@@ -47,11 +49,11 @@
 
             </header>
 
-            <p class="p-nav_text c-blue u-sp-only"><strong>天神駅から徒歩4分！ 19時まで受付！</strong></p>
+            <p class="p-nav_text c-blue u-sp-only"><strong>西鉄天神駅から徒歩1分！ 19時まで受付！</strong></p>
 
             <div class="l-col-right l-top-visual p-first-view">
 
-                <p class="p-nav_text c-blue u-pc-only"><strong>天神駅から徒歩4分！ 19時まで受付！</strong></p>
+                <p class="p-nav_text c-blue u-pc-only"><strong>西鉄天神駅から徒歩1分！ 19時まで受付！</strong></p>
 
                 <div class=" p-visual">
                     <div class="p-visual__inner">
@@ -82,7 +84,7 @@
                     <li class="p-action_nav__list c-action_list ">
                         <p class="c-action_list__tit c-action_list__tit--access">アクセス</p>
 
-                        <a href="#" class="c-action_btn p-action_btn">access</a>
+                        <a href="<%= path %>/access.html" class="c-action_btn p-action_btn">access</a>
                     </li>
                     <li class="p-action_nav__list c-action_list ">
                         <p class="c-action_list__tit c-action_list__tit--reserve ">来院予約</p>

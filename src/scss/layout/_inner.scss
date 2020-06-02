@@ -4,3 +4,12 @@
     max-width: 1400px;
     width: 100%;
 }
+
+.l-pages-inner {
+    max-width: 1100px;
+    margin-right: auto;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}

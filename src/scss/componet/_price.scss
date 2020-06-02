@@ -1,0 +1,30 @@
+.c-price-row {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 464px;
+    font-size: 0;
+
+    &__name, &__price {
+        text-align: center;
+        display: inline-block;
+        padding: 1.25rem 0;
+        font-size: 1.25rem;
+        letter-spacing: 0.1em;
+    }
+
+    &__name {
+        background-color: $blue;
+        width: 45%;
+        max-width: 199px;
+        color: #fff;
+        border: 1px solid $blue;
+    }
+
+    &__price {
+        color: $blue;
+        width: 55%;
+        max-width: 265px;
+        border: 1px solid $blue;
+    }
+}

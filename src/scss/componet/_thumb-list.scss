@@ -1,0 +1,82 @@
+.c-thumb-list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    &__item {
+        max-width: 531px;
+        width: 47.8%;
+
+        @media (max-width: 767px) {
+            margin-bottom: 2.58rem;
+            width: 100%;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__thumb {
+        margin-bottom: 1.6875rem;
+    }
+
+    &__ttl {
+        font-size: 1.375rem;
+        line-height: 1;
+        margin-bottom: 0.6875rem;
+        font-weight: 400;
+
+        @media (max-width: 767px) {
+            font-size: 2.125rem;
+            margin-bottom: 1.1rem;
+        }
+    }
+
+    &__desc {
+        line-height: 1.38;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.18vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.35rem;
+            line-height: 1.7;
+        }
+
+        &--indent04 {
+            padding-left: 5em;
+            text-indent: -5em;
+            line-height: 1.56;
+        }
+
+        &--indent03 {
+            padding-left: 3em;
+            text-indent: -3em;
+            margin-bottom: 2.9875rem;
+            line-height: 1.56;
+
+            &--mb {
+                margin-bottom: 1.4375rem;
+            }
+        }
+    }
+}
+
+/* ３列バージョン */
+
+.c-thumb-list-row03 {
+    &__item {
+        width: 30%;
+        max-width: 319px;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

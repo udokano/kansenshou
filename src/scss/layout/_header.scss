@@ -24,3 +24,11 @@
         width: 100%;
     }
 }
+
+/* 下層ヘッダー */
+
+.l-pages-header {
+    @media (min-width: 768px) {
+        height: 545px;
+    }
+}

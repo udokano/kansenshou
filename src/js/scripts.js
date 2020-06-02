@@ -1,29 +1,17 @@
 // JavaScript Document
 
-//TOP__PAGE__HEADER__ARROW&FIXED
-var windowWidth = $(window).width();
-var windowSm = 768;
-if (windowWidth <= windowSm) {
-  //SP
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() == 0) {
-      $(".sp__slide-header").css({ opacity: "0", visibility: "hidden" });
-    } else {
-      $(".sp__slide-header").css({ opacity: "1", visibility: "inherit" });
-    }
-  });
-} else {
-  //PC
-  $(window).scroll(function () {
-    if ($(window).scrollTop() == 0) {
-      $("#js-slide").addClass("is-arw");
-      $("#site-header.top").removeClass("is-fixed");
-    } else {
-      $("#js-slide").removeClass("is-arw");
-      $("#site-header.top").addClass("is-fixed");
-    }
-  });
+
+var url = location.href;
+
+console.log(url);
+
+if (url.match("/access.html")) {
+  $('.p-pages-visual').addClass("p-pages-visual--bg-access");
 }
+
+
+
+
 
 
 
@@ -36,51 +24,7 @@ $('.js-link').on('click', function (e) {
 })
 
 
-//TOP PAGE MENU ANCHOR HOVER
 
-$(".js-anchor.anchor-menu01 span").mouseover(
-  function () {
-    if (!$(this).hasClass("is-select")) {
-      $(".js-anchor.anchor-menu01 span").not(this).removeClass("is-select");
-      $(this).addClass("is-select");
-    }
-  }
-);
-
-$(".js-anchor.anchor-menu02 span").mouseover(
-  function () {
-    if (!$(this).hasClass("is-select")) {
-      $(".js-anchor.anchor-menu02 span").not(this).removeClass("is-select");
-      $(this).addClass("is-select");
-    }
-  }
-);
-
-$(".js-anchor.anchor-menu03 span").mouseover(
-  function () {
-    if (!$(this).hasClass("is-select")) {
-      $(".js-anchor.anchor-menu03 span").not(this).removeClass("is-select");
-      $(this).addClass("is-select");
-    }
-  }
-);
-$(".js-anchor.anchor-menu04 span").mouseover(
-  function () {
-    if (!$(this).hasClass("is-select")) {
-      $(".js-anchor.anchor-menu04 span").not(this).removeClass("is-select");
-      $(this).addClass("is-select");
-    }
-  }
-);
-
-$(".js-anchor.anchor-menu05 span").mouseover(
-  function () {
-    if (!$(this).hasClass("is-select")) {
-      $(".js-anchor.anchor-menu05 span").not(this).removeClass("is-select");
-      $(this).addClass("is-select");
-    }
-  }
-);
 
 //TOP__PAGE__slide
 
@@ -108,7 +52,7 @@ $(function () {
 
 $(function () {
   //スムーススクロール
-  var headerHight = 100; //ヘッダの高さ
+  var headerHight = 0; //ヘッダの高さ
   $('a[href^=#]').click(function () {
     var href = $(this).attr("href");
     var target = $(href == "#" || href == "" ? 'html' : href);

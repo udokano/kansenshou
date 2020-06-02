@@ -1,0 +1,142 @@
+.c-bg-desc {
+    background-color: #e3edff;
+    padding: 0 2.2875rem 2rem 2.2875rem;
+    border-radius: 12px;
+
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
+        padding: 0 2.2vw 2vw 2.2vw;
+    }
+
+    @media (max-width: 767px) {
+        border-radius: 6px;
+        padding: 0 1.5875rem 2rem 1.5875rem;
+    }
+
+    &__ttl {
+        font-size: 1.875rem;
+        padding: 1.19375rem 0;
+        line-height: 1;
+        font-weight: 300;
+
+        @media (max-width: 767px) {
+            padding: 1.45rem 0;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__text {
+        background-color: #fff;
+        border-radius: 23px;
+        padding: 1.5rem 2rem;
+        line-height: 1.44;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.18vw;
+        }
+
+        @media (max-width: 767px) {
+            border-radius: 11px;
+            font-size: 1.28rem;
+            line-height: 1.5;
+            padding: 1.38rem 1.2rem;
+        }
+
+        &--hiv {
+            @media (max-width: 767px) {
+                padding: 1.78rem 1.95rem;
+                line-height: 1.74;
+            }
+        }
+    }
+}
+
+.c-desc-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    &__item {
+        max-width: 497px;
+        width: 48.5%;
+        background-color: #fff;
+        border-radius: 23px;
+        padding: 2.125rem 2rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            padding: 2.1vw 2.0vw;
+        }
+
+        @media (min-width: 768px) {
+            max-height: 400px;
+            height: 88vw;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 1.78rem;
+            border-radius: 11px;
+            padding: 2.425rem 1.7rem;
+            width: 100%;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        &--pd-short {
+            @media (min-width: 768px) {
+                padding: 2.125rem 1.14rem;
+            }
+        }
+    }
+
+    &__ttl {
+        font-size: 1.375rem;
+        line-height: 1;
+        display: inline-block;
+        max-width: 168px;
+        width: 58%;
+        border: 1px solid $blue;
+        border-radius: 3px;
+        max-height: 38px;
+        height: 19vw;
+        text-align: center;
+        line-height: 38px;
+        margin-bottom: 1.125rem;
+
+        @media (max-width: 767px) {
+            max-width: 210px;
+            width: 40%;
+            margin-bottom: 1.55rem;
+            font-size: 1.55rem;
+            font-weight: 400;
+        }
+
+        &--short {
+            max-width: 100px;
+            font-weight: 400;
+
+            @media (max-width: 767px) {
+                font-size: 1.7rem;
+                width: 28%;
+            }
+        }
+    }
+
+    &__desc {
+        line-height: 1.56;
+        margin-bottom: 1rem;
+        text-align: justify;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.17vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.19rem;
+            line-height: 1.7;
+        }
+    }
+}

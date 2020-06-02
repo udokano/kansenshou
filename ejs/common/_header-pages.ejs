@@ -5,110 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="<%= path %>/src/css/slick.css">
-    <link rel="stylesheet" href="<%= path %>/src/css/style.css?var=1.4.99">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= path %>/src/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<%= path %>/src/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<%= path %>/src/favicons/favicon-16x16.png">
-    <link rel="manifest" href="<%= path %>/src/favicons/site.webmanifest">
-    <link rel="mask-icon" href="<%= path %>/src/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <title><%= title %></title>
+    <link rel="stylesheet" href="<%= path %>/src/css/style.css?var=1.2">
+
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="<%= keywords %>">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= path %>/src/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= path %>/src/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= path %>/src/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <meta name="format-detection" content="telephone=no" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152960049-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <title><%= title %></title>
 
-        gtag('config', 'UA-152960049-1');
-    </script>
 
-    <script>
-        (function (d) {
-            var config = {
-                kitId: 'yrq5rir',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
-    </script>
 </head>
 
 
 <body>
-    <div class="wrapper">
+    <div class="l-wrapper">
 
-        <header id="site-header" class="pages">
+        <div class="l-col02-fv u-flex">
+            <header class="l-col-left l-header l-pages-header p-header p-header-pages">
 
-            <div class="contents flex-sb align-cent">
+                <div class="p-header__inner">
+                    <div class="p-header__logo">
+                        <a href="<%= path %>/index.html">
+                            <img src="<%= path %>/src/img/common/c_site_logo.png" alt="感染症検査クリニック" class="u-pc-only">
+                            <img src="<%= path %>/src/img/common/c_site_logo_sp.png" alt="感染症検査クリニック" class="u-sp-only">
+                        </a>
+                    </div>
+                    <!-- ./p-header__logo -->
 
-                <div class="site__logo">
-                    <a href="index.html"><img src="<%= path %>/src/img/common/site_logo.png" alt="onbodyclinic" /></a>
+                    <div class="p-header__cv">
+                        <a href="<%= path %>/access.html" class="c-header_btn c-header_btn--info c-bg_blue">クリニック情報</a>
+                        <a href="<%= path %>/index.html#link-menu"
+                            class="c-header_btn c-header_btn--menu c-bg_pink">診察メニュー</a>
+                    </div>
+                    <!-- ./p-header__cv -->
                 </div>
+                <!-- ./p-header__inner -->
 
-                <nav class="header__nav pc-only">
-                    <ul class="flex align-bottom">
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="menu.html">MENU</a></li>
-                        <li><a href="price.html">PRICE</a></li>
-                        <li><a href="doctor.html">DOCTOR</a></li>
-                        <li><a href="qa.html">Q&A</a></li>
-                    </ul>
-                </nav>
+            </header>
 
+            <p class="p-nav_text c-blue u-sp-only"><strong>西鉄天神駅から徒歩1分！ 19時まで受付！</strong></p>
 
-                <div class="right pc-displey">
-                    <ul class="flex al-cent">
-                        <li class="reserve js-popup-open open-reserve"> <a class="js-popup-open open-reserve"><img
-                                    src="<%= path %>/src/img/common/icon_reserve.png" alt="ご予約" /></a>
-                        </li>
-                        <li class="tel js-popup-open open-tel"> <a class="js-popup-open open-tel"><img
-                                    src="<%= path %>/src/img/common/icon_tel.png" alt="tel" /></a>
-                        </li>
-                        <li class="mail"> <a href="https://souki-kai.or.jp/contact/index.php" target="_blank"><img
-                                    src="<%= path %>/src/img/common/icon_mail.png" alt="mail" /></a> </li>
-                    </ul>
+            <div class="l-col-right l-top-visual p-first-view">
+
+                <p class="p-nav_text c-blue u-pc-only"><strong>西鉄天神駅から徒歩1分！ 19時まで受付！</strong></p>
+
+                <div class="p-pages-visual">
                 </div>
+                <!-- ./p-pages-visual -->
 
-                <div class="sp-display menu__icon" id="js_menu_trigger">
-                    <img src="<%= path %>/src/img/common/icon_menu-trigger.svg" alt="MENU">
-                </div>
+                <ul class="l-action_nav p-action_nav c-bg_blue">
+                    <li class="p-action_nav__list p-action_nav__list--tel c-action_list c-action_tel">
+                        <a href="<%= path %>/tel/kansenshou.html" class="c-action_tel__tit"
+                            target="_blank">0120-133-220</a>
+                        <p class="action_tel__text">受付 10:00～19:00 不定休</p>
+                        <a href="<%= path %>/tel/kansenshou.html"
+                            class="c-action_btn u-sp-display p-action_btn p-action_btn--tel"
+                            target="_blank">telephone</a>
+                    </li>
 
-            </div>
+                    <li class="p-action_nav__list c-action_list ">
+                        <p class="c-action_list__tit c-action_list__tit--access">アクセス</p>
 
-        </header>
+                        <a href="<%= path %>/access.html" class="c-action_btn p-action_btn">access</a>
+                    </li>
+                    <li class="p-action_nav__list c-action_list ">
+                        <p class="c-action_list__tit c-action_list__tit--reserve ">来院予約</p>
 
+                        <a class="c-action_btn js-popup-open open-reserve p-action_btn">reservation</a>
+                    </li>
+                    <li class="p-action_nav__list c-action_list ">
+                        <p class="c-action_list__tit c-action_list__tit--contact">お問合わせ</p>
 
-        <!-- SP only objects -->
-        <div class="quick-nav">
-            <div class="quick-nav__close"> <span class="quick-nav__close__item"></span> <span
-                    class="quick-nav__close__item"></span> </div>
-            <ul class="quick-nav__list">
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="price.html">PRICE</a></li>
-                <li><a href="doctor.html">DOCTOR</a></li>
-                <li><a href="qa.html">Q&A</a></li>
-                <li><a href="http://souki-kai.or.jp/pdf/under18.pdf">未成年同意書</a></li>
-            </ul>
-        </div>
-        <!-- SP only slide__NAV -->
-        <div class="sp__slide-header sp-display">
-            <div class="contents">
-                <ul class="nav-link">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="menu.html">MENU</a></li>
-                    <li><a href="price.html">PRICE</a></li>
-                    <li><a href="doctor.html">DOCTOR</a></li>
-                    <li><a href="qa.html">Q&A</a></li>
+                        <a href="https://souki-kai.or.jp/contact/index.php" class="c-action_btn p-action_btn"
+                            target="_blank">mail</a>
+                    </li>
                 </ul>
-                <div class="next-arw"></div>
+
             </div>
+
+
         </div>

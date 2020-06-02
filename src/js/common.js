@@ -11,21 +11,7 @@
 ; (function ($) {
 
 
-  /* hash jumper
-  -------------------------------------------------- */
-  if (location.hash) {
-    setTimeout(function () {
-      $("html, body").scrollTop(0);
-      jump();
-    }, 50);
-  }
 
-  var jump = function () {
-    var target = location.hash;
-    setTimeout(function () {
-      $("html, body").animate({ scrollTop: $(target).offset().top - 80 }, 700, "swing");
-    }, 1200);
-  }
 
 
   /* load
@@ -136,24 +122,24 @@
 
         /* swiper menu
         ---------------------------------------- */
-        setTimeout(function () {
-          var swiper = new Swiper(".swiper-container", {
-            slidesPerView: "auto",
-            freeMode: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-              540: {
-                slidesPerView: "auto",
+        /*   setTimeout(function () {
+            var swiper = new Swiper(".swiper-container", {
+              slidesPerView: "auto",
+              freeMode: true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
               },
-              767: {
-                slidesPerView: 6,
-              }
-            },
-          });
-        }, 200);
+              breakpoints: {
+                540: {
+                  slidesPerView: "auto",
+                },
+                767: {
+                  slidesPerView: 6,
+                }
+              },
+            });
+          }, 200); */
       }
       /* < 768 [PC]
       ---------------------------------------- */

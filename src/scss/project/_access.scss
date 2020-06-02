@@ -1,0 +1,148 @@
+/* アクセスページ */
+
+.p-access_box {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 4.5625rem;
+
+    &__left {
+        width: 65%;
+        max-width: 658px;
+        padding-left: 3.375rem;
+        padding-right: 5.75rem;
+        padding-bottom: 1.4375rem;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 2.25rem 0;
+            padding-top: 0;
+        }
+    }
+
+    &__thumb {
+        width: 44%;
+        max-width: 441px;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @media (max-width: 767px) {
+            position: static;
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    &__logo {
+        max-width: 223px;
+        width: 38%;
+        margin-bottom: 1.5625rem;
+
+        @media (max-width: 767px) {
+            width: 48%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+.p-address-box {
+    margin-bottom: 1.625rem;
+
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
+        margin-bottom: 1.6vw;
+    }
+
+    &__ttl, &__desc {
+        line-height: 1.75;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.17vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.45rem;
+        }
+    }
+
+    &__ttl {
+        color: $blue;
+    }
+
+    &__desc {}
+
+    &__sub-tit {
+        display: inline-block;
+        width: 10.5rem;
+
+        @media (max-width: 767px) {
+            width: 14.5rem;
+        }
+    }
+}
+
+.p-address-tel {
+    display: inline-block;
+
+    @media (max-width: 767px) {
+        width: 69%;
+        padding-top: 1.24rem;
+    }
+
+    &__ttl {
+        font-size: 1.125rem;
+        margin-bottom: 0.25rem;
+        letter-spacing: .26em;
+        line-height: 1;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.1vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.38rem;
+        }
+    }
+
+    &__number {
+        padding-left: 2.625rem;
+        background: url(../img/common/c_icon_freedial_blue.png) no-repeat 0% 50% / 2.1875rem auto;
+        font-size: 1.73125rem;
+        margin-bottom: 0.18rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.7vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 2.3rem;
+            padding-left: 3.1rem;
+            background-size: 2.8rem auto;
+        }
+    }
+
+    &__time {
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.1vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.22rem;
+        }
+    }
+}
+
+.p-access-map {
+    max-height: 560px;
+    height: 88vw;
+    margin-bottom: 6.5625rem;
+}
+
+.p-map-btn {
+    display: inline-block;
+    width: 225px;
+    font-size: .875rem;
+}

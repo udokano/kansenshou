@@ -1,0 +1,511 @@
+/* 下層FV */
+
+.p-pages-visual {
+    background: url(../img/pages-common/pages_ttl_bg.jpg) no-repeat 50% (50% / cover);
+    max-height: 324px;
+    height: 34vw;
+    margin-bottom: 3.1875rem;
+
+    &--bg-access {
+        background-image: url(../img/access/ttl.bg.jpg);
+    }
+}
+
+/*　下層施術説明 */
+
+.p-pages-about {
+    background: no-repeat 50% (50% / cover);
+    margin-bottom: 4.5rem;
+
+    &--type-b {
+        background-image: url(../img/type-b/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/type-b/about_bg_sp.jpg);
+            background-position: 67% 50%;
+            background-size: auto 100%;
+        }
+    }
+
+    &--hiv {
+        background-image: url(../img/hiv/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/hiv/about_bg_sp.jpg);
+        }
+    }
+
+    &--corona {
+        background-image: url(../img/coronavirus/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/coronavirus/about_bg_sp.jpg);
+        }
+    }
+
+    &--seibyo {
+        background-image: url(../img/seibyou/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/seibyou/about_bg_sp.jpg);
+        }
+    }
+
+    &--smear {
+        background-image: url(../img/smear/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/smear/about_bg_sp.jpg);
+        }
+    }
+
+    &__tit {
+        margin-bottom: 0;
+    }
+
+    &__textbox {
+        padding: 4.25rem 2.2625rem;
+        width: 40%;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            padding: 4.0vw 2.1vw;
+            padding-left: 2.2625rem;
+        }
+
+        @media (min-width: 768px) {
+            min-width: 579px;
+            max-width: 90%;
+        }
+
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 2.2rem 2.43rem;
+            text-align: justify;
+        }
+
+        &--hiv {
+            width: 59%;
+            max-width: 703px;
+
+            @media screen and (min-width: 768px) and (max-width: 1400px) {
+                width: 67%;
+            }
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        &--seibyo {
+            width: 65%;
+            max-width: 660px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        &--corona {
+            width: 69%;
+            max-width: 620px;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+
+        &--smear {
+            max-width: 651px;
+            width: 47%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__desc {
+        line-height: 1.63;
+        margin-bottom: 1rem;
+        letter-spacing: .025em;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.20vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.58rem;
+            line-height: 1.8;
+        }
+    }
+}
+
+.p-pages-about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.125rem 0.9375rem 0 2.25rem;
+
+    @media screen and (min-width: 768px) and (max-width: 1400px) {
+        padding: 2.1vw .92vw 0 2.2vw;
+    }
+
+    @media (max-width: 767px) {
+        flex-flow: column-reverse;
+        padding-bottom: 0;
+    }
+
+    &__left {
+        max-width: 541px;
+        padding-top: 1.445rem;
+        width: 54%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__thumb {
+        max-width: 440px;
+        width: 44%;
+
+        @media (max-width: 767px) {
+            margin: 2.5rem auto;
+            width: 84%;
+        }
+    }
+}
+
+/* 検査方法 */
+
+.p-inspection {
+    margin-bottom: 6.875rem;
+}
+
+.p-inspection-list {
+    &__item {
+        margin-bottom: 3.875rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__ttl {
+        margin-bottom: 2.375rem;
+    }
+}
+
+.p-inspection-list-row {
+    @media (max-width: 767px) {
+        flex-flow: column-reverse;
+    }
+
+    &__left {
+        max-width: 600px;
+        width: 55%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &--type-b {
+            @media (min-width: 768px) {
+                max-width: 580px;
+                width: 53%;
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1400px) {
+                width: 51%;
+            }
+        }
+
+        &--smear {
+            @media (min-width: 768px) {
+                max-width: 523px;
+                width: 48%;
+            }
+        }
+
+        &--seibyo {
+            @media (min-width: 768px) {
+                max-width: 590px;
+            }
+        }
+    }
+
+    &__thumb {
+        max-width: 493px;
+        width: 43%;
+
+        @media (max-width: 767px) {
+            margin-bottom: 2.34rem;
+            width: 100%;
+        }
+
+        &--smear {
+            @media (min-width: 768px) {
+                max-width: 493px;
+                width: 47%;
+            }
+        }
+    }
+
+    &__point {
+        margin-bottom: 0.6875rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.32vw;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 1.1rem;
+        }
+    }
+
+    &__desc {
+        line-height: 1.38;
+        margin-bottom: 4.25rem;
+        letter-spacing: 0.1em;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.1vw;
+            margin-bottom: 3.988vw;
+        }
+
+        @media (max-width: 767px) {
+            margin-bottom: 2.2rem;
+            font-size: 1.24rem;
+            line-height: 1.7;
+        }
+
+        &--smear {
+            margin-bottom: 2.675rem;
+
+            @media screen and (min-width: 768px) and (max-width: 1400px) {
+                margin-bottom: 2.98vw;
+            }
+
+            @media (max-width: 767px) {
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}
+
+/* チェックリスト */
+
+.p-check {
+    margin-bottom: 4.25rem;
+
+    &--smear {
+        margin-bottom: 0;
+    }
+}
+
+.p-check-list {
+    &--smear {
+        padding: 2.1875rem 7.3125rem;
+        padding-right: 0;
+        background-color: #fcfcfc;
+        border: 1px solid #bbbbbb;
+        border-radius: 8px;
+
+        @media (max-width: 767px) {
+            border-radius: 4px;
+            padding: 2.25rem 2.4rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    &__item {
+        &--smear {
+            display: inline-block;
+            max-width: 482px;
+            width: 46%;
+
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
+            &:nth-of-type(5), &:nth-of-type(6) {
+                @media (min-width: 768px) {
+                    margin-bottom: 0;
+                }
+
+                @media (max-width: 767px) {}
+            }
+
+            &:last-of-type {
+                @media (max-width: 767px) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.p-case {
+    margin-bottom: 6.0625rem;
+}
+
+.p-corona-note {
+    text-align: center;
+    font-size: 1.375rem;
+    color: #161616;
+    margin: 2.625rem 0 1.1875rem;
+}
+
+/* コロナ感染経路 */
+
+.p-root-corona-list {
+    margin-bottom: 4.3125rem;
+    flex-wrap: wrap;
+
+    &__item {
+        height: 482px;
+        position: relative;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            height: 35vw;
+        }
+
+        @media (max-width: 767px) {
+            height: 99vw;
+        }
+    }
+}
+
+/* 性病症状 */
+
+.p-case-seibyo-list {
+    flex-wrap: wrap;
+    margin-bottom: 7.75rem;
+
+    &__item {
+        max-width: 532px;
+        width: 49%;
+        height: 477px;
+        position: relative;
+        margin-bottom: 3.4375rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            height: 35vw;
+        }
+
+        @media (max-width: 767px) {
+            height: 99vw;
+            width: 100%;
+        }
+
+        &--height-up {
+            height: 564px;
+
+            @media screen and (min-width: 768px) and (max-width: 1400px) {
+                height: 43vw;
+            }
+
+            @media (max-width: 767px) {
+                height: 110vw;
+            }
+
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.p-radius-desc {
+    position: absolute;
+    bottom: 0;
+
+    &__ttl, &__text {}
+
+    &__ttl {}
+
+    &__text {}
+}
+
+/* コロナ症状 */
+
+.p-corona-desc-row__item {
+    max-height: 147px;
+    height: 32vw;
+    width: 48.5%;
+
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+}
+
+.p-alert {
+    text-align: center;
+    max-width: 969px;
+    margin: 4.1875rem auto 5.125rem;
+    padding: 1.375rem 0;
+    color: $red;
+    border: 1px solid $red;
+
+    &__massage {
+        font-size: 1.25rem;
+        letter-spacing: .1em;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.25vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.1rem;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+/* ガン種類 */
+
+.p-case-kind {
+    margin-bottom: 4rem;
+}
+
+.p-case-box {
+    padding: 2.25rem 0 3.75rem;
+
+    @media (max-width: 767px) {
+        flex-flow: column-reverse;
+    }
+
+    &__text {
+        max-width: 631px;
+        width: 100%;
+        padding-top: .78rem;
+    }
+
+    &__desc {
+        line-height: 1.5;
+        margin-bottom: 0.6875rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            font-size: 1.08vw;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 1.38rem;
+        }
+    }
+
+    &__thumb {
+        max-width: 316px;
+        width: 70%;
+        margin: 0 4.375rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+            margin: 0 4.2vw;
+        }
+
+        @media (max-width: 767px) {
+            margin: 2.25rem auto;
+        }
+    }
+}
