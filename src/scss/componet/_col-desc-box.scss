@@ -1,0 +1,40 @@
+.c-col-desc {
+    text-align: center;
+
+    &__ttl {
+        line-height: 1;
+        font-size: 1.875rem;
+        color: #fff;
+        border: 1px solid;
+        padding: 1.25rem 0;
+
+        &--bg-light-green {
+            background-color: #07b0d4;
+            border-color: #07b0d4;
+        }
+
+        &--bg-light-pink {
+            background-color: #fc89a6;
+            border-color: #fc89a6;
+        }
+    }
+
+    &__text {
+        line-height: 1.38;
+        font-size: 1rem;
+        border: 1px solid;
+        padding: 2.25rem 0;
+
+        @media (max-width: 767px) {
+            font-size: 1.34rem;
+        }
+
+        &--bd-light-green {
+            border-color: #07b0d4;
+        }
+
+        &--bd-light-pink {
+            border-color: #fc89a6;
+        }
+    }
+}

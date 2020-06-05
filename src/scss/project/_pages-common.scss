@@ -59,6 +59,14 @@
         }
     }
 
+    &--quick {
+        background-image: url(../img/quick/about_bg.jpg);
+
+        @media (max-width: 767px) {
+            background-image: url(../img/quick/about_bg_sp.jpg);
+        }
+    }
+
     &__tit {
         margin-bottom: 0;
     }
@@ -84,11 +92,11 @@
         }
 
         &--hiv {
-            width: 59%;
-            max-width: 703px;
+            width: 60%;
+            max-width: 680px;
 
             @media screen and (min-width: 768px) and (max-width: 1400px) {
-                width: 67%;
+                width: 70%;
             }
 
             @media (max-width: 767px) {
@@ -120,6 +128,13 @@
 
             @media (max-width: 767px) {
                 width: 100%;
+            }
+        }
+
+        &--quick {
+            @media (min-width: 768px) {
+                max-width: 680px;
+                width: 70%;
             }
         }
     }
@@ -277,6 +292,7 @@
             margin-bottom: 2.2rem;
             font-size: 1.24rem;
             line-height: 1.7;
+            padding-right: 1.7%;
         }
 
         &--smear {
@@ -421,11 +437,9 @@
     position: absolute;
     bottom: 0;
 
-    &__ttl, &__text {}
-
-    &__ttl {}
-
-    &__text {}
+    @media (max-width: 767px) {
+        padding-right: 1.7%;
+    }
 }
 
 /* コロナ症状 */
@@ -447,6 +461,10 @@
     padding: 1.375rem 0;
     color: $red;
     border: 1px solid $red;
+
+    @media (max-width: 767px) {
+        margin-right: 1.8%;
+    }
 
     &__massage {
         font-size: 1.25rem;

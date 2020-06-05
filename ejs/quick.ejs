@@ -1,0 +1,81 @@
+<% var title = '感染症クリニック | クリック検査'; %>
+<% var description = '福岡県天神駅から徒歩1分の所に新たにオープンした、「感染症検査クリニック」。感染症検査クリニックでは、HIV検査を行っております、HIVは早期に発見すれば、免疫力を下げることなく通常の生活を送ることがます。HIVの感染が疑われる方は、天神駅にある感染症検査クリニックまで。'%>
+<% var keywords = '感染症,福岡市,天神駅,HIV検査,エイズ' ;%>
+<% var path = '.'; %>
+<% include common/_header-pages %>
+
+<!-- 記述 -->
+<div class="l-col02_wrapper u-flex">
+
+    <h1 class="l-col-left u-vertical__ttl">
+        <span class="u-f-questrial u-vertical__ttl__main">ANTIBODY TEST</span>
+        <span class="u-vertical__ttl__sub">クイック検査について</span>
+    </h1>
+
+    <div class="l-col-right">
+
+        <div class="p-pages-about p-pages-about--quick">
+            <h2 class="p-pages-about__tit c-tit-blue">クイック検査（抗体検査）とは</h2>
+            <div class="p-pages-about__textbox p-pages-about__textbox--quick">
+                <p class="p-pages-about__desc">
+                                    患者様の体内にウイルスに対して抗体の有無をキットを使用して判定します。<br>通常検査と違い、少量の血液で検査を行う為、身体的負担が少なく、検査キット<br>を使用することにより、判定までに時間がかからないという特徴があります
+                                    </p>
+
+                <p class="p-pages-about__desc u-mb0">
+                                                            身近な人が感染症にかかってしまった、過去に思い当たる節があるけど症状はない方など、過去に感染していたかを調べることにより、他人に感染させるリスクを低減することができることになります。</p>
+            </div>
+
+        </div>
+        <!-- ./p-pages-about -->
+
+        <section class="p-quick-inspection">
+            <div class="l-pages-inner">
+                <h3 class="c-tit-underline p-quick-inspection-ttl">通常検査</h3>
+                <p
+                    class="p-quick-inspection-text">抗体とは異物が体内に侵入した際、ウイルスなどの異物に対抗するために産生される物質です。産出された抗体は主に血液中や組織液中に存在し、役割と働く場所に違う抗体が５種類存在しています。ウイルスに感染したときに最初に作られる抗体IgMと数々のウイルスに対して抗原を含む抗体IgGの２つの抗体の有無を調べることにより過去に感染していたかどうかを判定することができます。</p>
+
+                <ul class="p-quick-inspection-row u-flex-sb">
+                    <li class="p-quick-inspection-row__item">
+                        <dl class="c-col-desc">
+                            <dt class="c-col-desc__ttl c-col-desc__ttl--bg-light-green">IgM抗体</dt>
+                            <dd class="c-col-desc__text c-col-desc__text--bd-light-green">ウイルスに感染した初期段階（７日以内）で生成され<br>
+                                短期間で消滅する抗体</dd>
+                        </dl>
+                    </li>
+
+                    <li class="p-quick-inspection-row__item">
+                        <dl class="c-col-desc">
+                            <dt class="c-col-desc__ttl c-col-desc__ttl--bg-light-pink">IgG抗体</dt>
+                            <dd class="c-col-desc__text c-col-desc__text--bd-light-pink">ウイルスに感染したのち、IgM抗体に遅れて出現<br>
+                                次第に減りながら長期間血液中に存在する抗体です</dd>
+                        </dl>
+                    </li>
+                </ul>
+
+                <div class="p-inspection-graph">
+                    <img src="<%= path %>/src/img/quick/graph.jpg" alt="血清の抗体価" class="u-pc-only">
+                    <img src="<%= path %>/src/img/quick/graph_sp.jpg" alt="血清の抗体価" class="u-sp-only">
+                </div>
+
+                <p class="c-red p-inspection-graph-note">※検査結果で陽性判定が出た場合、すでに抗体を持っていると考えられますが、再感染しないということではありません。</p>
+                <p class="c-red p-inspection-graph-note">※陰性判定の場合、体内に抗体がないため、感染していた可能性は低いですが、今後の感染リスクが高いため、注意が必要です。</p>
+            </div>
+            <!-- ./l-pages-inner -->
+
+        </section>
+
+        <% include common/_copy-light %>
+
+    </div>
+    <!-- ./l-col-right -->
+
+
+</div>
+
+
+
+
+
+
+
+<% include common/_footer %>

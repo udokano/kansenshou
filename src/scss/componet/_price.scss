@@ -5,6 +5,10 @@
     max-width: 464px;
     font-size: 0;
 
+    @media (max-width: 767px) {
+        padding-right: 2.2%;
+    }
+
     &__name, &__price {
         text-align: center;
         display: inline-block;
